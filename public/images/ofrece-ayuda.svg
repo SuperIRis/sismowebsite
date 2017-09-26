@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="88" viewBox="0 0 83 88">
+    <defs>
+        <filter id="a" width="111.5%" height="106.8%" x="-5.8%" y="-3.4%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-62 -47)">
+        <path d="M64 50h80v80H64z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M118.967 101.667v-5.834l-8.3 8.334 8.3 8.333v-5.833h18.366v-5zM129.033 115.833h-18.366v5h18.366v5.834l8.3-8.334-8.3-8.333zM95.667 68.333c3.666 0 6.666-3 6.666-6.666 0-3.667-3-6.667-6.666-6.667C92 55 89 58 89 61.667c0 3.666 3 6.666 6.667 6.666zm-12.5 11.334l-9.167 47h7L86.833 100 94 106.667v20h6.667V101.5l-6.834-6.833 2-10C100.167 90 106.667 93.333 114 93.333v-6.666c-6.167 0-11.5-3.334-14.5-8.167l-3.167-5.333C95.167 71.167 93 70 90.667 70c-.834 0-1.667.167-2.5.5l-17.5 7.167v15.666h6.666V82.167l5.834-2.5z"/>
+    </g>
+</svg>
