@@ -1,6 +1,7 @@
 @import 'normalize';
 @import 'colors';
 @import 'text-styles';
+@import 'accordion';
 
 * {
     box-sizing: border-box;    
@@ -13,6 +14,9 @@ body {
 }
 h2 {
     margin:0;
+}
+p {
+    font-weight:300;
 }
 .bg {
     width: 100%;
@@ -35,6 +39,7 @@ h2 {
 .overlay-hero-content {
     color:white;
     display:flex;
+    flex-flow: row wrap;
     height:355px;
     justify-content:flex-start;
     margin-top:-360px;
@@ -68,7 +73,7 @@ h2 {
     background-color: $pink;
     color:white;
     font-size: 2em;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.4em;
     padding: 1.6em 15% 2em 12em;
 }
@@ -83,6 +88,7 @@ h2 {
     justify-content: space-between;
     margin-top:2em;
     padding:0;
+    flex-flow: row wrap;
 }
 .card {
     background-color:$card_back;
@@ -147,4 +153,57 @@ h2 {
     font-size: 0.8em;
     justify-content: space-between;
     padding:0.4em 7%;
+}
+footer {
+    background-color: $footer;
+    display: flex;
+    font-size:0.9em;
+    justify-content: space-between;
+    padding:3em 1.8em;
+}
+.social-links {
+    ul {
+        list-style: none;
+        padding: none;
+    }
+    li {
+        display: inline-block;
+        padding: 0 0.3em;
+    }
+    a {
+        color:black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $pink;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        flex-basis:47%;
+        margin-bottom:2em;
+    }
+    .hero-info {
+        flex-basis: 100%;
+        margin-left:0;
+        text-align: center;
+    }
+    .intro {
+        padding: 1.6em 1em;
+        text-align: center;
+    }
+    .logo {
+        margin:0 auto;
+    }
+}
+@media screen and (max-width: 520px) {
+    .card {
+        flex-direction: column;
+        flex-basis:95%;
+    }
+    .hero-info {
+        flex-basis: 70%;
+    }
 }
