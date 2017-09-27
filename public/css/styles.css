@@ -397,7 +397,6 @@ template {
 .cssmenu > ul,
 .cssmenu > ul li,
 .cssmenu > ul li a {
-  margin: 0;
   padding: 0;
   border: 0;
   list-style: none;
@@ -653,6 +652,10 @@ footer {
 @media screen and (max-width: 520px) {
   .card {
     flex-direction: column;
-    flex-basis: 95%; }
+    flex-basis: 100%; }
   .hero-info {
-    flex-basis: 70%; } }
+    flex-basis: 100%; }
+    .hero-info h1 {
+      font-size: 1.8em; }
+  .intro {
+    font-size: 1.8em; } }

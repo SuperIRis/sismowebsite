@@ -3,7 +3,6 @@
 .cssmenu > ul,
 .cssmenu > ul li,
 .cssmenu > ul li a {
-    margin: 0;
     padding: 0;
     border: 0;
     list-style: none;
@@ -23,11 +22,11 @@
 }
 
 .cssmenu {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .align-right {
-  float: right;
+    float: right;
 }
 .cssmenu > ul li > a {
     padding: 1.7em 1.5em;
